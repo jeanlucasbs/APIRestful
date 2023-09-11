@@ -1,0 +1,5 @@
+package com.jeanlucas.apirestful.domain;
+
+public class User {
+
+}

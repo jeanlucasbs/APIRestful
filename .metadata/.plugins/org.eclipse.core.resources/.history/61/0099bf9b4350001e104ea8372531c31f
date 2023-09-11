@@ -1,0 +1,27 @@
+package com.jeanlucas.apirestful.config;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.jeanlucas.apirestful.domain.User;
+
+@Configuration
+@Profile("test")
+public class TestConfig implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		List<User> list = new ArrayList<>();
+		
+		User u1 = new User("1", "Maria Silva", "maria@gmail.com");
+		User u2 = new User("2", "Jean Lucas", "jean@gmail.com");
+		
+		list.addAll(Arrays.asList(u1,u2));
+	}
+	
+}

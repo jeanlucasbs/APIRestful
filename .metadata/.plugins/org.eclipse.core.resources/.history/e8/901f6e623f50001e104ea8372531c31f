@@ -1,0 +1,5 @@
+package com.jeanlucas.apirestful.resources;
+
+public class UserResource {
+
+}
